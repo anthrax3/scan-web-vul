@@ -5,4 +5,6 @@ $opts = getopt('h:');
 
 exec("nikto -h ".escapeshellcmd($opts["h"])."");
 exec("uniscan -u ".escapeshellcmd($opts["h"])." -qweds"); 
-//exec("vega -u ".escapeshellcmd($opts["h"])." ");
+//exec("vega ");
+//exec("python d-tect.py  ");
+exec("joomscan -u " . escapeshellcmd($opts["h"]));
