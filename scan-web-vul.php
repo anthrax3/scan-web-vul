@@ -5,4 +5,4 @@ $opts = getopt('h:');
 
 exec("nikto -h ".escapeshellcmd($opts["h"])."");
 exec("uniscan -u ".escapeshellcmd($opts["h"])." -qweds"); 
-
+//exec("vega -u ".escapeshellcmd($opts["h"])." ");
